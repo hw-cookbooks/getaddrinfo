@@ -32,7 +32,7 @@ getaddrinfo_precedence "prefer ipv4" do
   value 100
 end
 
-getaddrinfo_scopev4 "scoped" do
+getaddrinfo_scope "scoped" do
   mask "::ffff:0.0.0.0/96"
   value 14
 end
