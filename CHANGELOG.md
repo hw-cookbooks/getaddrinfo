@@ -5,7 +5,7 @@ This file is used to list changes made in each version of the getaddrinfo cookbo
 
 0.1.0
 -----
-- [your_name] - Initial release of getaddrinfo
+- Sean Porter - Initial release of getaddrinfo
 
 - - -
 Check the [Markdown Syntax Guide](http://daringfireball.net/projects/markdown/syntax) for help with Markdown.
