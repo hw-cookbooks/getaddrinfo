@@ -8,6 +8,10 @@
     grep '# two' /etc/gai.conf
 }
 
-@test "should have getaddrinfo precedence 'ipv4'" {
-    grep '# ipv4' /etc/gai.conf
+@test "should have getaddrinfo precedence 'prefer ipv4'" {
+    grep '# prefer ipv4' /etc/gai.conf
+}
+
+@test "should have getaddrinfo scope 'scoped'" {
+    grep '# scoped' /etc/gai.conf
 }

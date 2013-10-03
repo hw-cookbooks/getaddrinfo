@@ -27,7 +27,12 @@ getaddrinfo_label "two" do
   value 7
 end
 
-getaddrinfo_precedence "ipv4" do
+getaddrinfo_precedence "prefer ipv4" do
   mask "::ffff:0:0/96"
   value 100
+end
+
+getaddrinfo_scopev4 "scoped" do
+  mask "::ffff:0.0.0.0/96"
+  value 14
 end
