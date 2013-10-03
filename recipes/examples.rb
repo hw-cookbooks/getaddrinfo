@@ -26,3 +26,8 @@ getaddrinfo_label "two" do
   mask "2001:0::/32"
   value 7
 end
+
+getaddrinfo_precedence "ipv4" do
+  mask "::ffff:0:0/96"
+  value 100
+end

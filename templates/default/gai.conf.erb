@@ -58,6 +58,11 @@ label <%= label[:mask] %> <%= label[:value] %>
 #    For sites which prefer IPv4 connections change the last line to
 #
 #precedence ::ffff:0:0/96  100
+<% node[:getaddrinfo][:precedences].each do |name, precedence| -%>
+
+# <%= name %>
+precedence <%= precedence[:mask] %> <%= precedence[:value] %>
+<% end -%>
 
 #
 # scopev4  <mask>  <value>
